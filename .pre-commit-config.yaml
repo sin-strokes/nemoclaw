@@ -70,7 +70,7 @@ repos:
 
   # ── Priority 5: formatters ────────────────────────────────────────────────
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.12.0-2
+    rev: v3.14.1-1
     hooks:
       - id: shfmt
         args:
@@ -145,7 +145,7 @@ repos:
         priority: 10
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.11.0.1
+    rev: v0.11.0.1-1
     hooks:
       - id: shellcheck
         priority: 10
@@ -161,21 +161,21 @@ repos:
         priority: 10
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.1
+    rev: v8.30.0
     hooks:
       - id: gitleaks
         name: gitleaks (secret scan)
         priority: 10
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.22.0
+    rev: v0.24.0
     hooks:
       - id: markdownlint-cli2
         priority: 10
 
   # ── commit-msg hooks ────────────────────────────────────────────────────────
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.24.0
+    rev: v9.27.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
